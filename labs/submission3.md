@@ -32,6 +32,6 @@ In DevSecOps workflows, commit signing is critical because:
 - Ensures code provenance verification in CI/CD pipelines
 
 ### 1.4 Evidence of Signed Commits
-(Screenshots will be added after first signed commit)
+![alt text](./images/04-lab3-Evidence-Signed-Commits.png)
 
 
