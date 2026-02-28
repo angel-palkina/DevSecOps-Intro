@@ -1,0 +1,4 @@
+﻿# Clean Configuration File
+DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+API_ENDPOINT=https://api.example.com
+DEBUG_MODE=false
