@@ -1,0 +1,21 @@
+﻿=== DAST Multi-Tool Analysis Summary ===
+
+1. OWASP ZAP (Authenticated Scan):
+  - High: 2
+  - Medium: 8
+  - Low: 7
+  - Total: 17
+
+2. Nuclei (Template-Based Scan):
+  - Total findings: 6
+  - Critical: 0
+  - High: 0
+  - Medium: 0
+  - Low: 0
+  - Info: 5
+
+3. Nikto (Web Server Scan):
+  - Total findings: 154
+
+4. SQLmap (SQL Injection Test):
+  - Database records extracted: 22
