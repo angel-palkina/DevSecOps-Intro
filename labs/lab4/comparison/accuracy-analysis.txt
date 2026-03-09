@@ -1,0 +1,32 @@
+﻿=== Package Detection Comparison ===
+
+Packages detected by both tools: 988
+Packages only detected by Syft: 13
+Packages only detected by Trivy: 10
+Total unique packages (union): 1011
+
+=== Vulnerability Detection Overlap ===
+
+CVEs found by Grype: 93
+CVEs found by Trivy: 91
+Common CVEs: 26
+CVEs only in Grype: 67
+CVEs only in Trivy: 65
+
+CVE Detection Overlap: 27.96%
+
+=== Sample of Unique Findings ===
+
+First 5 CVEs only detected by Grype:
+  - CVE-2025-55130
+  - CVE-2025-55131
+  - CVE-2025-55132
+  - CVE-2025-59465
+  - CVE-2025-59466
+
+First 5 CVEs only detected by Trivy:
+  - CVE-2015-9235
+  - CVE-2016-1000223
+  - CVE-2016-1000237
+  - CVE-2016-4055
+  - CVE-2017-16016
