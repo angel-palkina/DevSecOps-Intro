@@ -1,0 +1,43 @@
+﻿=== SAST/DAST Correlation Report ===
+
+Security Testing Results Summary:
+
+SAST (Semgrep): 25 code-level findings
+  - ERROR severity: 7 (28%)
+  - WARNING severity: 18 (72%)
+
+DAST Results:
+  - ZAP (authenticated): 17 alerts (High:2, Medium:8, Low:7)
+  - Nuclei: 6 findings (Info:5)
+  - Nikto: 154 server/config issues
+  - SQLmap: 1 critical SQL injection + 22 records extracted
+
+DAST Total: 178 runtime findings
+
+=== Key Insights ===
+
+SAST (Static Analysis) Strengths:
+   Finds code-level vulnerabilities before deployment
+   Detects: hardcoded secrets, SQL injection patterns, insecure crypto, XSS in templates
+   Fast feedback in development phase (3-5 minutes)
+   Pinpoints exact file and line number
+   Zero runtime overhead
+
+DAST (Dynamic Analysis) Strengths:
+   Finds runtime configuration and deployment issues
+   Detects: missing security headers, auth flaws, server misconfigs
+   Authenticated scanning reveals 10x more attack surface
+   Proves exploitability (SQLmap extracted real data)
+   Tests actual deployed environment
+
+Complementary Coverage:
+  - SAST found SQL injection CODE patterns (6 instances)
+  - DAST confirmed SQL injection is EXPLOITABLE in runtime
+  - SAST found hardcoded JWT secret in source
+  - DAST found missing auth headers allowing token theft
+
+Recommendation: Use BOTH approaches for comprehensive security coverage
+  - SAST in CI/CD (pre-commit, PR checks)
+  - DAST in staging/QA (pre-deployment validation)
+
+

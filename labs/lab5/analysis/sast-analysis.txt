@@ -1,0 +1,19 @@
+﻿=== SAST Analysis Report ===
+
+Total Security Findings: 25
+
+Findings by Severity:
+  WARNING: 18
+  ERROR: 7
+
+Top 10 Most Common Vulnerability Types:
+  6x - express-sequelize-injection
+  4x - express-res-sendfile
+  4x - express-check-directory-listing
+  4x - unquoted-attribute-var
+  2x - unknown-value-with-script-tag
+  1x - code-string-concat
+  1x - raw-html-format
+  1x - hardcoded-jwt-secret
+  1x - unknown-value-in-redirect
+  1x - express-open-redirect

