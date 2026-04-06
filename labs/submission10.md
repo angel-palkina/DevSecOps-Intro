@@ -1,0 +1,7 @@
+## Key Metrics Snapshot (DefectDojo)
+
+- As of **2026-04-06**, the engagement contains **120 findings**, all currently **Open/Active** (no findings have been marked Closed/Mitigated yet): **Critical 11, High 62, Medium 32, Low 3, Informational 12**.
+- Findings are concentrated in dependency/container scanning imports: **Grype is the dominant source** (majority of Critical/High CVE and GHSA records), while **Nuclei** contributed several exposure/misconfiguration detections; **ZAP/Semgrep/Trivy** were imported but represent a smaller share in the current snapshot compared to Grype-backed findings.
+- SLA review shows **no overdue SLA breaches at snapshot time**, but multiple **Critical findings are due within 14 days** (e.g., several items created on 2026-04-06 with deadlines around 2026-04-13), requiring immediate triage and remediation planning.
+- Top recurring weakness themes are **dependency and supply-chain vulnerabilities** (notably repeated issues in `vm2`, `jsonwebtoken`, `lodash`, `tar`, `minimatch`, `sanitize-html`, and `openssl/glibc` packages), mapping broadly to **OWASP A06: Vulnerable and Outdated Components** and **OWASP A03: Injection**-related patterns.
+- Program-level takeaway: the current risk posture is **high** due to the volume of Open High/Critical findings; priority should be given to patchable packages with available fixed versions and to establishing a remediation workflow (verification, mitigation state updates, and SLA tracking) in DefectDojo.
