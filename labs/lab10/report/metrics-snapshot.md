@@ -1,0 +1,9 @@
+- Date captured: 2026-03-29
+- Active findings: 
+   - Critical: 11
+   - High: 62
+   - Medium: 32
+   - Low: 3
+   - Informational: 12
+- Verified findings: 0 (all imported findings require verification/review)
+- Mitigated findings: 0 (all findings remain open as of snapshot date)
